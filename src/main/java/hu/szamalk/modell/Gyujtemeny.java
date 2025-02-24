@@ -18,14 +18,15 @@ public abstract class Gyujtemeny implements Iterable<Media>{
     public void beOlvasas(Media media){
         if (mediak.size() < 5){
             mediak.add(media);
-            this.ferohely ++;
+            this.ferohely++;
         }else{
             throw new RuntimeException("Nem lehet több média.");
         }
     }
 
-    public void kiIras(){
-
+    public void kiIras(Media media){
+        mediak.remove(media);
+        //if (mediak.size())
     }
 
     @Override
