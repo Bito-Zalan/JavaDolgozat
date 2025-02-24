@@ -1,3 +1,5 @@
+//
+
 package hu.szamalk.modell;
 
 import java.util.ArrayList;
@@ -17,8 +19,10 @@ public abstract class Gyujtemeny implements Iterable<Media>{
 
     public void beOlvasas(Media media){
         if (mediak.size() < 5){
-            mediak.add(media);
             this.ferohely++;
+            if (ferohely <= 5){
+                mediak.add(media);
+            }
         }else{
             throw new RuntimeException("Nem lehet több média.");
         }

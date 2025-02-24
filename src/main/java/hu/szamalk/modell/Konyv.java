@@ -1,3 +1,5 @@
+//
+
 package hu.szamalk.modell;
 
 import java.util.Objects;

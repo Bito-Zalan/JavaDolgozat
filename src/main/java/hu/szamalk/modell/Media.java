@@ -1,8 +1,10 @@
+//
+
 package hu.szamalk.modell;
 
 import java.util.UUID;
 
-public abstract class Media {
+public abstract class Media implements Cloneable{
     private UUID id;
     private int ar;
     private Kategoria kategoria;
