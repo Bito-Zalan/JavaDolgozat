@@ -7,6 +7,7 @@ public abstract class Media {
     private int ar;
     private Kategoria kategoria;
 
+    public abstract boolean equals(Konyv egyik, Konyv masik);
 
     public Media(UUID id, int ar, Kategoria kategoria) {
         this.id = id;
@@ -14,6 +15,14 @@ public abstract class Media {
         this.kategoria = kategoria;
     }
 
+    @Override
+    public String toString() {
+        return "Media{" +
+                "id=" + id +
+                ", ar=" + ar +
+                ", kategoria=" + kategoria +
+                '}';
+    }
 
 
 }
